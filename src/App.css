@@ -1,38 +1,144 @@
 .App {
-  text-align: center;
+    font-family: 'D-DIN-Bold', Arial, Verdana, sans-serif;
+    padding: 50px;
+    color: #474747;
+    background: #f1f1f1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bold {
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+    color: #393939;
 }
 
-.App-link {
-  color: #61dafb;
+
+/***** LATEST NEWS ******/
+
+.latestNews h1 {
+    color: #012e49
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.latestNews {
+    flex-basis: 75%;
+}
+
+.displayPost {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a.LatestNewsCard {
+    margin: 0 2% 2% 0;
+    width: 40%;
+    padding: 3%;
+    border-radius: 15px;
+    box-shadow: #474747 0px 0px 15px;
+    text-decoration: inherit;
+}
+
+.LatestNewsCard {
+    display: flex;
+    flex-direction: column;
+}
+
+article.LatestNewsCard {
+    flex: 1;
+}
+
+.LatestNewsCard p {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/***** LOGO ******/
+
+.logo img {
+    width: 60vmin;
+}
+
+/***** Post Details ****/
+
+.factImg {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.postDetails hr {
+    margin: 30px 0;
+}
+
+.postDetails span {
+    margin-left: 5px;
+}
+
+
+.socialSharing {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.socialSharing button {
+    margin-left: 5px;
+}
+
+
+/***** LAUNCHES *****/
+
+.launche {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.launche img {
+    width: 25%;
+    padding: 20px;
+}
+
+.launche h3 {
+    color: #012e49;
+    margin-bottom: 5px;
+}
+
+.launche p {
+    margin-top: 0;
+}
+
+.launches h1 {
+    color: #012e49;
+    text-align: center;
+}
+
+
+/***** Header *****/
+header.App-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchBar {
+    margin-top: 20px;
+    width: 40%;
+}
+
+
+/***** LOADER *****/
+.loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 45%;
 }
